@@ -1,0 +1,54 @@
+.btn {
+
+    background-color: color(main);
+    text-transform: uppercase;
+    background-color: color(green);
+    color: color(white);
+    font-size: size(medium);
+    padding: 2.2rem 4.9rem;
+    @include trans;
+    align-self: start;
+    border-radius: 5.6rem;
+    @include shadow;
+    @include mtb;
+    font-weight: 800;
+
+    @include for-small-desktop {    
+        margin: 0 auto;
+        margin-top: 3rem;
+        
+     }
+
+    &:hover{
+        background-color: color(white);
+        color: color(main);
+        @include shadow2;
+    }
+}
+.btn2{
+    @include shadow;
+    color: color(main);
+    background-color: color(white);
+    padding: 1.6rem 3.9rem;
+    font-size: size(medium);
+    text-transform: uppercase;
+    border-radius: 5.6rem;
+    font-weight: 800;
+    @include trans;
+
+    &:hover{
+        background-color: color(main);
+        color: color(white);
+        @include shadow2;
+    }
+
+    @include for-phone-only {    
+        display: none;
+     }
+}
+
+
+a:link,
+a:active{
+    text-decoration: none;
+}

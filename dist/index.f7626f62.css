@@ -1,0 +1,43 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1f7352;
+  padding: 2.2rem 4.9rem;
+  font-size: 2.4rem;
+}
+
+.btn2 {
+  color: #1f7352;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 5rem;
+  margin: auto;
+  padding: 2.2rem;
+  font-size: 2.4rem;
+  box-shadow: 0 10px 25px #1f73521a;
+}
+
+a:link, a:active {
+  text-decoration: none;
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.f7626f62.css.map */

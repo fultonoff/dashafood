@@ -1,0 +1,136 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+    .circle{
+        position: absolute;
+        right: 0;
+        width: 50%;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+
+        @include for-small-desktop {    
+            // display: none;
+            width: 100%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            transform: rotate(90deg);
+            
+         }
+    }
+
+    .navigation{
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+        width: 100%;
+        align-items: center;
+        background-color: color(white);
+        
+        @include shadow
+    }
+
+    .hero{
+
+        @include for-small-desktop {    
+            flex-direction: column;
+            text-align: center;
+         }
+
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+
+
+        &__content{
+            flex: 1;
+            display: flex; 
+            justify-content: center;
+            padding: 0 0 0 5rem;
+            font-family: $main-font;
+            flex-direction: column;
+
+            @include for-small-desktop {    
+                text-align: center;
+                align-items: center;
+                margin-top: 5rem;
+                
+             }
+
+            .mian-title{
+                font-size: 3rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1;
+
+                h1{
+                    span{
+                        color: color(main);
+                    }
+                }
+            }
+
+            .description{
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                margin-top: 3.9rem;
+            }
+
+            .list{
+               
+               margin-top: 9rem;
+               display: flex;
+               gap: 5rem;
+
+               .item{
+                list-style: none;
+                font-size: 2rem;
+               }
+            }
+
+        }
+
+        &__img{
+            position: relative;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                
+                width: 70%;
+                animation: 30s rotate infinite linear;
+                transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                @include for-small-desktop {    
+                   
+                    margin-top: 10rem;
+                    
+                 }
+
+                
+                
+            }
+
+            
+        }
+    }
+
+
+}
+
+
+.icon{
+    position: absolute;
+    z-index: -2;
+    filter: blur(2px);
+    font-size: 16px;
+    transition: all 3s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: rotate 2s infinite linear;
+  }

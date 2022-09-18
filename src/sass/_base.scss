@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+
+    @include for-desktop-up {    
+      font-size: 43%; 
+   }
+
+   @include for-phone-only {    
+    font-size: 30%; 
+ }
+  }
+
+  body{
+    font-family: $main-font;
+  }
